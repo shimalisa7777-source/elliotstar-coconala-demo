@@ -1,11 +1,11 @@
-import { MessageCircle, MapPin, CalendarCheck, Utensils, CreditCard } from "lucide-react"
+import { MessageCircle, MapPin, CalendarCheck, Sparkles, CreditCard } from "lucide-react"
 
 const steps = [
   {
     icon: MessageCircle,
     step: "01",
-    title: "ご予約",
-    description: "LINEまたはお電話にて、ご希望の日時・人数・席のご要望をお知らせください。個室ご希望の場合はお早めにどうぞ。",
+    title: "LINEまたはWebからご予約",
+    description: "LINEまたはお電話にて、ご希望の日時・メニューをお知らせください。初めての方もお気軽にご連絡ください。",
   },
   {
     icon: MapPin,
@@ -16,20 +16,20 @@ const steps = [
   {
     icon: CalendarCheck,
     step: "03",
-    title: "お席へご案内",
-    description: "スタッフがご予約を確認し、個室またはご指定のお席へご案内いたします。",
+    title: "カウンセリング",
+    description: "気になる箇所やお体の状態をお聞きします。初めての方にも丁寧にご説明します。",
   },
   {
-    icon: Utensils,
+    icon: Sparkles,
     step: "04",
-    title: "お食事をお楽しみください",
-    description: "旬の食材を活かした料理と落ち着いた空間で、心ゆくまでお過ごしください。",
+    title: "施術",
+    description: "カウンセリングの内容をもとに、お一人おひとりに合わせた施術を行います。",
   },
   {
     icon: CreditCard,
     step: "05",
-    title: "お会計",
-    description: "現金・クレジットカード・PayPay・交通系ICに対応しています。領収書も発行いたします。",
+    title: "アフターケアのご案内・お会計",
+    description: "施術後はセルフケアのアドバイスをお伝えします。現金・カード・PayPayに対応しています。",
   },
 ]
 

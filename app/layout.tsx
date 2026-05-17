@@ -14,7 +14,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: '店舗・サロン向けスマホ対応HP制作サンプル｜Elliot Star',
-  description: 'Instagram・LINE・Googleマップへの導線を整理した、店舗・サロン向け1ページホームページ制作サンプルです。Elliot Starによる制作デモサイトです。',
+  description: 'エステ・サロン向けに、メニュー・料金・アクセス・LINE予約・Instagram導線を分かりやすく整理した1ページホームページ制作サンプルです。Elliot Starによる制作デモサイトです。',
   keywords: ['ホームページ制作', 'サロン', '店舗', 'スマホ対応', 'LP制作', '1ページHP', 'Web導線'],
   icons: {
     icon: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '店舗・サロン向けスマホ対応HP制作サンプル｜Elliot Star',
-    description: 'Instagram・LINE・Googleマップへの導線を整理した、店舗・サロン向け1ページホームページ制作サンプルです。',
+    description: 'エステ・サロン向けに、メニュー・料金・アクセス・LINE予約・Instagram導線を分かりやすく整理した1ページホームページ制作サンプルです。',
     siteName: 'Elliot Star デモサイト',
     locale: 'ja_JP',
     type: 'website',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '店舗・サロン向けスマホ対応HP制作サンプル｜Elliot Star',
-    description: 'Instagram・LINE・Googleマップへの導線を整理した、店舗・サロン向け1ページホームページ制作サンプルです。',
+    description: 'エステ・サロン向けに、メニュー・料金・アクセス・LINE予約・Instagram導線を分かりやすく整理した1ページホームページ制作サンプルです。',
     images: ['/opengraph-image.jpg'],
   },
 }

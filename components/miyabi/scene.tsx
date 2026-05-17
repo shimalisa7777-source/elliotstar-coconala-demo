@@ -1,52 +1,52 @@
-import { Briefcase, Heart, Users, Wine } from "lucide-react"
+import { Sparkles, MessageCircle, Users, Heart } from "lucide-react"
 
 const scenes = [
   {
-    icon: Briefcase,
-    title: "接待",
+    icon: Sparkles,
+    title: "施術ルーム",
     description: (
       <>
-        落ち着いた完全個室で、<br className="block sm:hidden" />
-        大切なお客様をおもてなし。
+        清潔感のある完全個室で、<br className="block sm:hidden" />
+        周りを気にせずリラックスできます。
       </>
     ),
   },
   {
-    icon: Heart,
-    title: "記念日",
+    icon: MessageCircle,
+    title: "カウンセリング",
     description: (
       <>
-        特別な日を彩るコースと、<br className="block sm:hidden" />
-        サプライズのご相談も承ります。
+        お体の状態やお悩みをヒアリングし、<br className="block sm:hidden" />
+        最適な施術をご提案します。
       </>
     ),
   },
   {
     icon: Users,
-    title: "ご家族でのお食事",
+    title: "完全プライベート",
     description: (
       <>
-        お子様からご年配の方まで、<br className="block sm:hidden" />
-        安心してお楽しみいただけます。
+        完全予約制のため、<br className="block sm:hidden" />
+        他のお客様と時間が重なりません。
       </>
     ),
   },
   {
-    icon: Wine,
-    title: "少人数の会食",
+    icon: Heart,
+    title: "アフターケア",
     description: (
       <>
-        親しい方との会食に、<br className="block sm:hidden" />
-        ゆったりとした時間をお過ごしください。
+        施術後もセルフケアの<br className="block sm:hidden" />
+        アドバイスをお伝えします。
       </>
     ),
   },
 ]
 
-const seats = [
-  { type: "完全個室", capacity: "2名様〜8名様" },
-  { type: "カウンター席", capacity: "1名様〜4名様" },
-  { type: "テーブル席", capacity: "2名様〜4名様" },
+const spaces = [
+  { type: "施術ルーム", capacity: "完全個室・2室" },
+  { type: "カウンセリングスペース", capacity: "1名様専用" },
+  { type: "待合スペース", capacity: "完全入替制" },
 ]
 
 export function Scene() {
@@ -56,10 +56,10 @@ export function Scene() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-sm text-muted-foreground tracking-widest mb-3">
-            SCENE
+            SPACE
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground tracking-wider">
-            大切な時間に寄り添う空間
+            ゆっくりと過ごせる、プライベート空間
           </h2>
           <div className="mt-6 mx-auto w-16 h-px bg-accent" />
         </div>
@@ -67,14 +67,14 @@ export function Scene() {
         {/* Image Grid */}
         <div className="grid md:grid-cols-2 gap-4 mb-16">
           <div className="aspect-[4/3] bg-muted rounded-2xl overflow-hidden relative">
-            <img src="/room.jpg" alt="落ち着いた空間" className="w-full h-full object-cover object-center" />
+            <img src="/room.jpg" alt="施術ルーム" className="w-full h-full object-cover object-center" />
           </div>
           <div className="flex flex-col gap-4">
             <div className="aspect-[4/3] bg-muted rounded-2xl overflow-hidden relative">
-              <img src="/counseling.jpg" alt="カウンセリングルーム" className="w-full h-full object-cover object-center" />
+              <img src="/counseling.jpg" alt="カウンセリングスペース" className="w-full h-full object-cover object-center" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-2xl overflow-hidden relative">
-              <img src="/room.jpg" alt="くつろぎの空間" className="w-full h-full object-cover object-[center_40%]" />
+              <img src="/room.jpg" alt="落ち着いた空間" className="w-full h-full object-cover object-[center_40%]" />
             </div>
           </div>
         </div>
@@ -99,20 +99,20 @@ export function Scene() {
           ))}
         </div>
 
-        {/* Seat Info */}
+        {/* Space Info */}
         <div className="max-w-2xl mx-auto">
           <h3 className="text-lg font-medium text-foreground mb-6 tracking-wider text-center">
-            お席のご案内
+            スペースのご案内
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {seats.map((seat, index) => (
+            {spaces.map((space, index) => (
               <div
                 key={index}
                 className="px-6 py-3 bg-muted rounded-full text-sm"
               >
-                <span className="font-medium text-foreground">{seat.type}</span>
+                <span className="font-medium text-foreground">{space.type}</span>
                 <span className="text-muted-foreground ml-2">
-                  {seat.capacity}
+                  {space.capacity}
                 </span>
               </div>
             ))}

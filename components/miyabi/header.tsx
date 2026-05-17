@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navItems = [
-  { href: "#reasons", label: "選ばれる理由" },
-  { href: "#menu", label: "お品書き" },
-  { href: "#scene", label: "店内空間" },
+  { href: "#reasons", label: "コンセプト" },
+  { href: "#menu", label: "メニュー" },
+  { href: "#scene", label: "空間" },
   { href: "#flow", label: "ご来店の流れ" },
   { href: "#faq", label: "よくある質問" },
   { href: "#access", label: "アクセス" },
@@ -28,10 +28,10 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex flex-col items-start">
             <span className="text-lg md:text-xl font-semibold tracking-wider text-foreground">
-              旬菜和食 みやび
+              プライベートサロン ミヤビ
             </span>
             <span className="text-[10px] md:text-xs text-muted-foreground tracking-widest">
-              SHUNSAI WASHOKU MIYABI
+              PRIVATE SALON MIYABI
             </span>
           </Link>
 

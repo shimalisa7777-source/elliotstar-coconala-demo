@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, CreditCard, Users, Calendar } from "lucide-react"
+import { MapPin, Clock, Phone, CreditCard, DoorOpen, Calendar } from "lucide-react"
 
 const info = [
   {
@@ -14,12 +14,12 @@ const info = [
   {
     icon: Clock,
     label: "営業時間",
-    value: "ランチ 11:30〜14:00（L.O. 13:30）\nディナー 17:00〜22:00（L.O. 21:00）",
+    value: "10:00〜19:00（最終受付 18:00）",
   },
   {
     icon: Calendar,
     label: "定休日",
-    value: "月曜日（祝日の場合は翌火曜日）",
+    value: "火曜日（祝日の場合は翌水曜日）",
   },
   {
     icon: Phone,
@@ -33,9 +33,9 @@ const info = [
     value: "現金 / クレジットカード各種 / PayPay / 交通系IC",
   },
   {
-    icon: Users,
-    label: "席数",
-    value: "全28席（個室：4室 / カウンター：6席 / テーブル：8席）",
+    icon: DoorOpen,
+    label: "施術ルーム",
+    value: "完全個室・2室（完全予約制）",
   },
 ]
 
@@ -81,7 +81,7 @@ export function Access() {
           <div className="order-1 lg:order-2">
             <div className="bg-card rounded-sm border border-border/50 p-6 md:p-8">
               <h3 className="text-xl font-semibold text-foreground mb-6 tracking-wider">
-                旬菜和食 みやび
+                プライベートサロン ミヤビ
               </h3>
               <dl className="space-y-5">
                 {info.map((item, index) => (
@@ -121,7 +121,7 @@ export function Access() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   <span className="font-medium text-foreground block mb-2">ご予約について</span>
                   ご予約はLINEまたはお電話にて承っております。<br />
-                  個室のご希望はお早めにお問い合わせください。
+                  ご不明な点はお気軽にお問い合わせください。
                 </p>
               </div>
             </div>

@@ -2,9 +2,9 @@ import Link from "next/link"
 import { Instagram } from "lucide-react"
 
 const navLinks = [
-  { href: "#reasons", label: "選ばれる理由" },
-  { href: "#menu", label: "お品書き" },
-  { href: "#scene", label: "店内空間" },
+  { href: "#reasons", label: "コンセプト" },
+  { href: "#menu", label: "メニュー" },
+  { href: "#scene", label: "空間" },
   { href: "#reviews", label: "お客様の声" },
   { href: "#flow", label: "ご来店の流れ" },
   { href: "#faq", label: "よくある質問" },
@@ -19,10 +19,10 @@ export function Footer() {
           <div>
             <Link href="/" className="flex flex-col items-start">
               <span className="text-lg font-semibold tracking-wider">
-                旬菜和食 みやび
+                プライベートサロン ミヤビ
               </span>
               <span className="text-[10px] text-primary-foreground/60 tracking-widest">
-                SHUNSAI WASHOKU MIYABI
+                PRIVATE SALON MIYABI
               </span>
             </Link>
             <p className="mt-3 text-xs text-primary-foreground/60">
@@ -58,7 +58,7 @@ export function Footer() {
         <div className="my-8 h-px bg-primary-foreground/10" />
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-primary-foreground/50">
-          <p>© 2025 旬菜和食 みやび All Rights Reserved.</p>
+          <p>© 2025 プライベートサロン ミヤビ All Rights Reserved.</p>
           <p>
             Sample demo by{" "}
             <a href="#" className="hover:text-primary-foreground transition-colors">

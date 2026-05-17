@@ -2,43 +2,24 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const courses = [
   {
-    name: "季節のおまかせコース",
+    name: "初回カウンセリング付き体験コース",
     price: "6,600",
-    description: (
-      <>
-        前菜・お造り・焼物・煮物<br className="block sm:hidden" />
-        <span className="hidden sm:inline">・</span>土鍋ごはん・甘味
-      </>
-    ),
+    description: "初めてのお客様向け。カウンセリング（30分）＋フェイシャルまたはボディトリートメント（60分）。お悩みをお聞きしながら最適な施術をご提案します。",
     isRecommended: true,
   },
   {
-    name: "記念日コース",
+    name: "アロマボディトリートメント 60分",
     price: "8,800",
-    description: (
-      <>
-        特別前菜・お造り・焼物・煮物<br className="block sm:hidden" />
-        <span className="hidden sm:inline">・</span>肉料理・土鍋ごはん・甘味<br className="block sm:hidden" />
-        <span className="hidden sm:inline">・</span>メッセージプレート
-      </>
-    ),
+    description: "全身のコリや疲れをほぐす、アロマオイルを使用したボディトリートメント。心地よい香りとともにリラックスをお届けします。",
     isRecommended: false,
   },
 ]
 
 const alacarte = [
-  {
-    name: "旬のお造り盛り合わせ",
-    price: "2,400",
-  },
-  {
-    name: "季節の土鍋ごはん",
-    price: "1,800",
-  },
-  {
-    name: "日本酒飲み比べ",
-    price: "1,500",
-  },
+  { name: "フェイシャルケア 60分", price: "9,900" },
+  { name: "全身リラクゼーション 90分", price: "12,800" },
+  { name: "肩・首集中ケア 45分", price: "6,600" },
+  { name: "オプション ヘッドケア 20分", price: "2,200" },
 ]
 
 export function MenuSection() {
@@ -51,24 +32,24 @@ export function MenuSection() {
             MENU
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground tracking-wider">
-            お品書き・コース
+            メニュー・料金
           </h2>
           <div className="mt-6 mx-auto w-16 h-px bg-accent" />
         </div>
 
-        {/* Course Main Image */}
+        {/* Main Image */}
         <div className="mb-16 aspect-[21/9] md:aspect-[3/1] rounded-2xl overflow-hidden relative shadow-md">
           <img
             src="/treatment.jpg"
-            alt="サービスイメージ"
+            alt="施術イメージ"
             className="w-full h-full object-cover object-center"
           />
         </div>
 
-        {/* Course Menu */}
+        {/* Featured Courses */}
         <div className="mb-16">
           <h3 className="text-xl font-medium text-foreground mb-8 tracking-wider text-center">
-            コース料理
+            おすすめコース
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {courses.map((course, index) => (
@@ -106,10 +87,10 @@ export function MenuSection() {
           </div>
         </div>
 
-        {/* A La Carte */}
+        {/* Single Menu */}
         <div>
           <h3 className="text-lg font-medium text-foreground mb-6 tracking-wider text-center">
-            一品料理
+            単品メニュー
           </h3>
           <div className="max-w-xl mx-auto">
             <Card className="bg-card border-border/50">
@@ -118,32 +99,21 @@ export function MenuSection() {
                   {alacarte.map((item, index) => (
                     <li
                       key={index}
-                      className={`flex flex-col sm:flex-row sm:items-center gap-4 ${
+                      className={`flex items-baseline justify-between ${
                         index !== alacarte.length - 1
-                          ? "pb-6 border-b border-border/30"
+                          ? "pb-4 border-b border-border/30"
                           : ""
                       }`}
                     >
-                      {item.image && (
-                        <div className="w-full sm:w-28 h-40 sm:h-20 shrink-0 rounded-xl overflow-hidden relative shadow-sm">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="w-full h-full object-cover scale-[1.05]"
-                          />
-                        </div>
-                      )}
-                      <div className="flex-1 flex items-baseline justify-between w-full">
-                        <span className="text-foreground tracking-wide font-medium">
-                          {item.name}
+                      <span className="text-foreground tracking-wide font-medium">
+                        {item.name}
+                      </span>
+                      <span className="text-secondary font-medium whitespace-nowrap pl-4">
+                        ¥{item.price}
+                        <span className="text-xs font-normal text-muted-foreground ml-1">
+                          （税込）
                         </span>
-                        <span className="text-secondary font-medium whitespace-nowrap pl-4">
-                          ¥{item.price}
-                          <span className="text-xs font-normal text-muted-foreground ml-1">
-                            （税込）
-                          </span>
-                        </span>
-                      </div>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -154,8 +124,8 @@ export function MenuSection() {
 
         {/* Note */}
         <p className="text-center text-xs text-muted-foreground mt-8 leading-relaxed">
-          ※ 季節により内容が変わる場合がございます。<br className="block sm:hidden" />
-          アレルギー等ございましたらお申し付けください。
+          ※ メニュー内容は変更になる場合がございます。<br className="block sm:hidden" />
+          アレルギーや体調については、カウンセリング時にお知らせください。
         </p>
       </div>
     </section>

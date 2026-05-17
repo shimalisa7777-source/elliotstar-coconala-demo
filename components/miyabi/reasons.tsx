@@ -1,24 +1,24 @@
-import { Utensils, DoorOpen, Heart } from "lucide-react"
+import { MessageCircle, DoorOpen, Heart } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const reasons = [
   {
-    icon: Utensils,
-    title: "旬の食材と出汁を活かした料理",
+    icon: MessageCircle,
+    title: "初めてでも安心のカウンセリング",
     description:
-      "四季折々の旬の食材を厳選し、丁寧にひいた出汁とともに、素材の味わいを最大限に引き出した一皿をお届けします。",
+      "ご来店時に丁寧なカウンセリングを実施しています。気になる箇所や生活習慣をお聞きし、お一人おひとりに合った施術をご提案します。",
   },
   {
     icon: DoorOpen,
-    title: "会話を楽しめる落ち着いた個室",
+    title: "完全予約制の落ち着いた個室",
     description:
-      "周りを気にせずゆっくりとお過ごしいただける個室をご用意。大切な方との会話を、静かな空間でお楽しみください。",
+      "他のお客様と時間が重ならない完全予約制を採用。プライベートな空間で、周りを気にせずゆっくりとお過ごしいただけます。",
   },
   {
     icon: Heart,
-    title: "記念日・接待にも安心の接客",
+    title: "分かりやすい予約・Web導線",
     description:
-      "特別な日を彩るお手伝いをいたします。お料理の進行やサプライズのご相談など、心を込めて対応させていただきます。",
+      "LINE予約・Instagram・Googleマップへのアクセスを分かりやすく整理。初めてのお客様でも迷わずご来店いただける導線を整えています。",
   },
 ]
 
@@ -32,7 +32,7 @@ export function Reasons() {
             WHY MIYABI
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground tracking-wider">
-            みやびが選ばれる理由
+            ミヤビが選ばれる理由
           </h2>
           <div className="mt-6 mx-auto w-16 h-px bg-accent" />
         </div>

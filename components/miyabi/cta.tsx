@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { Calendar, Phone, MapPin, MessageCircle } from "lucide-react"
+import { Phone, MessageCircle, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function CTA() {
@@ -11,11 +10,11 @@ export function CTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider mb-6">
-          ご予約・ご来店までの流れ
+          ご予約・ご相談はお気軽に
         </h2>
         <p className="text-primary-foreground/90 leading-relaxed mb-10 max-w-xl mx-auto text-left sm:text-center">
           ご予約はLINEまたはお電話にて承っております。<br />
-          個室のご希望やご要望がございましたら、お気軽にお申し付けください。
+          初めての方のご質問もお気軽にどうぞ。
         </p>
 
         {/* CTA Buttons */}
@@ -45,16 +44,16 @@ export function CTA() {
             size="lg"
             className="bg-stone-900/50 hover:bg-stone-900/70 backdrop-blur-md border border-white/40 text-white shadow-lg px-8 py-6 text-base tracking-wider transition-colors w-full sm:w-auto"
           >
-            <Link href="#access">
-              <MapPin className="w-5 h-5 mr-2" />
-              地図を見る
-            </Link>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-5 h-5 mr-2" />
+              Instagramを見る
+            </a>
           </Button>
         </div>
 
         {/* Business Hours */}
         <p className="text-sm text-primary-foreground/60">
-          営業時間：11:30〜14:00 / 17:00〜22:00（月曜定休）
+          営業時間：10:00〜19:00（火曜定休）
         </p>
       </div>
     </section>
