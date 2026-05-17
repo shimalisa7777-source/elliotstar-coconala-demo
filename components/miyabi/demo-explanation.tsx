@@ -12,19 +12,19 @@ export function DemoExplanation() {
           <p className="text-sm text-muted-foreground leading-relaxed text-left max-w-xl mx-auto">
             このページは、Elliot Starが手がけるスマホ対応1ページ型ホームページの見本サイトです。
             実在する店舗ではありません。実際の制作では、店舗様の写真・メニュー・価格帯・予約導線・
-            Googleビジネスプロフィールの状況に合わせて、Web導線を整理した集客ホームページを
+            Googleビジネスプロフィールの状況に合わせて、Web導線を整理したスマホ対応ホームページを
             個別に設計いたします。
           </p>
           <div className="mt-6 pt-6 border-t border-border/30">
             <p className="text-xs text-muted-foreground text-left max-w-xl mx-auto">
-              スマホ対応ホームページ制作・店舗情報の整理・予約導線の構築に関するご相談は{" "}
+              スマホ対応ホームページ制作・店舗情報の整理・予約導線の構築に関するご相談は、{" "}
               <a
                 href="#"
                 className="text-secondary hover:underline font-medium"
               >
-                Elliot Starのサービスページ
+                ココナラのサービスページ
               </a>{" "}
-              をご覧ください。
+              をご確認ください。
             </p>
           </div>
         </div>

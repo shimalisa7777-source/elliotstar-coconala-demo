@@ -26,7 +26,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-xs text-primary-foreground/60">
-              〒330-0802 埼玉県さいたま市大宮区宮町1-2-3 みやびビル2F
+              サンプル住所（大宮駅徒歩5分想定）
             </p>
             <div className="mt-4 flex items-center gap-4">
               <a

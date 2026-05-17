@@ -4,7 +4,7 @@ const info = [
   {
     icon: MapPin,
     label: "住所",
-    value: "〒330-0802 埼玉県さいたま市大宮区宮町1-2-3 みやびビル2F",
+    value: "サンプル住所（大宮駅徒歩5分想定）",
   },
   {
     icon: MapPin,
